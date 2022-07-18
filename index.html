@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakah</title>
+</head>
+<style>
+    /*Main Fonts*/
+    @font-face {
+        font-family: Arabic_100;
+        src: url(Fonts/ArFont.ttf);
+    }
+
+    @font-face {
+        font-family: Arabic_200;
+        src: url(Fonts/Ar_Font.ttf);
+    }
+
+    :root {
+        --Main-Fonts: Arabic_100;
+        --other-fonts: Arabic_200;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: var(--other-fonts);
+        background-image: url(zakah.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container {
+        width: 100%;
+        height: 1vh;
+        padding: 20px 200px;
+    }
+
+    .container h1 {
+        margin-top: 35px;
+        margin-bottom: 15px;
+        font-weight: bold;
+        font-size: 25px;
+
+    }
+
+    .container h1,
+    .aya {
+        text-align: center;
+        color: white;
+    }
+
+    form {
+        text-align: center;
+        border: 2px solid white;
+        border-radius: 5px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 70px auto;
+        padding: 20px;
+    }
+
+    form .num {
+        width: calc(100% - 100px);
+        height: 30px;
+        margin-bottom: 15px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        font-family: var(--other-fonts);
+        text-align: center;
+    }
+
+    form button {
+        width: 120px;
+        padding: 15px;
+        font-family: var(--other-fonts);
+        font-size: 13px;
+        border: none;
+        outline: none;
+        background-color: #E8AA42;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .res-zakah {
+        text-align: center;
+        color: white;
+    }
+
+</style>
+
+<body>
+    <div class="container">
+        <h1>حساب الزكاه</h1>
+        <p class="aya">
+            أَأَشْفَقْتُمْ أَنْ تُقَدِّمُوا بَيْنَ يَدَيْ نَجْوَاكُمْ صَدَقَاتٍ ۚ فَإِذْ لَمْ تَفْعَلُوا وَتَابَ اللَّهُ
+            عَلَيْكُمْ
+            فَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ وَأَطِيعُوا اللَّهَ وَرَسُولَهُ ۚ وَاللَّهُ خَبِيرٌ بِمَا
+            تَعْمَلُونَ
+        </p>
+        <form>
+            <input onkeyup="get_Data()" type="text" name="text" class="num">
+        </form>
+        <h3 class="res-zakah">
+
+        </h3>
+    </div>
+</body>
+<script src="mian.js" defer></script>
+
+</html>
