@@ -8,3 +8,4 @@ JavaScript Zakah Count Money
 <h2 style="color:red; Font-weightbold;">
 هذا العمل لله اي نحتسب الثواب والأجر عند الله
 </h2>
+<a href="https://yassinelnoshokey1.github.io/Zakah/" target="_blank">Visit Demo</a>
